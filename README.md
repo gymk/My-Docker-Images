@@ -2,10 +2,14 @@
 
 My development docker images
 
+## Default Volume
+
+    MY_DOCKER_WORKSPACE = D:/DockerWorkSpace
+
 ## Ubuntu
 
-    docker build -t myubuntu:v1 .
-    docker run --rm -it -v ${PWD}:/work -d --name my_ubuntu myubuntu:v1
+    docker build -t gymk/ubuntu:18.04 .
+    docker run --rm -it -v ${PWD}:/work -d --name my_ubuntu gymk/ubuntu:18.04
     docker exec -it my_ubuntu /bin/bash
     docker stop my_ubuntu
 
