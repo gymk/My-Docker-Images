@@ -1,8 +1,16 @@
-set autoindent // auto indent
-set cindent // c language indent
-set number // display line number
-set sm // Show parentheses' pairs
-set tabstop=2 // indent width
-set shiftwidth=2 // auto indent width
-set title // Display the file name currently being edited
-set hlsearch // search highlight
+" auto indent
+set autoindent
+" c language indent
+set cindent
+" display line number
+set number
+" Show parentheses' pairs
+set sm
+" indent width
+set tabstop=2
+" auto indent width
+set shiftwidth=2
+" Display the file name currently being edited
+set title
+" search highlight
+set hlsearch

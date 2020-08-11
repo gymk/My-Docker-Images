@@ -8,7 +8,7 @@ My development docker images
 
 ## Ubuntu
 
-    docker build -t gymk/ubuntu:18.04 .
+    docker build -t gymk/ubuntu:18.04 -t gymk/ubuntu:latest .
     docker run --rm -it -v ${PWD}:/work -d --name my_ubuntu gymk/ubuntu:18.04
     docker exec -it my_ubuntu /bin/bash
     docker stop my_ubuntu
