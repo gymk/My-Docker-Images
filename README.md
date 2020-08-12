@@ -13,6 +13,13 @@ My development docker images
     docker exec -it my_ubuntu /bin/bash
     docker stop my_ubuntu
 
+## yocto
+
+    docker build -t gymk/yocto:18.04 -t gymk/yocto:latest .
+    docker run --rm -it -v ${PWD}:/work -d --name my_yocto gymk/yocto:18.04
+    docker exec -it my_yocto /bin/bash
+    docker stop my_yocto
+
 ## Android build image
 
     docker build -t android-build:android-gradle .
@@ -30,3 +37,8 @@ My development docker images
     chmod a+x ~/bin/repo
     repo init -u https://android.googlesource.com/platform/manifest
     repo sync
+
+## Links
+
+- Yocto
+  - <https://www.embeddedartists.com/wp-content/uploads/2018/04/iMX_Working_with_Yocto.pdf>
