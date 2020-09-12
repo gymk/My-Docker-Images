@@ -14,3 +14,5 @@ set shiftwidth=2
 set title
 " search highlight
 set hlsearch
+" expand tabstop
+set expandtab
